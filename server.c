@@ -20,7 +20,7 @@ int main()
     struct sockaddr_in addr;
     addr.sin_family = AF_INET;
     addr.sin_port = htons(8080); // port 8080   
-    addr.sin_addr = INADDR_ANY; // l'adresse ip 0.0.0.0, le serveur écoute toutes les interfaces réseau
+    addr.sin_addr.s_addr = INADDR_ANY; // l'adresse ip 0.0.0.0, le serveur écoute toutes les interfaces réseau
 
     bind(socket_fd, &addr, sizeof(addr));
     
