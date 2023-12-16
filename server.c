@@ -1,5 +1,3 @@
-#include <sys/_endian.h>
-#include <sys/_types/_socklen_t.h>
 #include <sys/fcntl.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -7,7 +5,6 @@
 #include <string.h>
 #include <fcntl.h>
 #include <sys/sendfile.h>
-#include <time.h>
 
 int main()
 {
